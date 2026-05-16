@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eid Mubarak Wishes</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: auto;
+        backdrop-filter: blur(15px);
+        background: rgba(255,255,255,0.08);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 0 25px rgba(0,255,200,0.3);
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        display: block;
+        border-radius: 15px;
+    }
+
+    h1 {
+        margin: 20px 0;
+        font-size: 22px;
+        background: linear-gradient(90deg, #00f5a0, #00d9f5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: fadeIn 2s ease-in-out;
+        text-shadow: 0 0 10px rgba(0,255,200,0.7);
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 15px 0;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border-radius: 30px;
+        border: 2px solid #00f5a0;
+        background: transparent;
+        color: #00f5a0;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #00f5a0;
+        color: black;
+        box-shadow: 0 0 15px #00f5a0;
+    }
+
+    #message {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .whatsapp {
+        margin-top: 15px;
+        background: #25D366;
+        color: white;
+        border: none;
+        display: none;
+    }
+
+    .whatsapp:hover {
+        background: #1ebe5d;
+        box-shadow: 0 0 10px #25D366;
+    }
+
+    .audio-control {
+        margin-top: 15px;
+        font-size: 14px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Eid GIF -->
+    <img src="eid.gif" alt="Eid Mubarak">
+
+    <!-- Greeting -->
+    <h1>✨ Eid Mubarak! May this<script>
+  atOptions = {
+    'key' : 'cbe878e9ba3ecd257a6bd7b6e4198a89',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/cbe878e9ba3ecd257a6bd7b6e4198a89/invoke.js"></script>
+</h1>
+
+    <!-- Input -->
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <!-- Generate Button -->
+    <button onclick="generateWish()">Generate Eid Wish</button>
+
+    <!-- Message -->
+    <div id="message"></div>
+
+    <!-- WhatsApp Share -->
+    <button class="whatsapp" id="whatsappBtn" onclick="shareWhatsApp()">📲 Share on WhatsApp</button>
+
+    <!-- Audio Control -->
+    <div class="audio-control" onclick="toggleAudio()">🔊 Toggle Sound</div>
+
+</div>
+
+<!-- Background Music -->
+<audio id="bgMusic" src="song.mp3" autoplay loop></audio>
+
+<script>
+    const audio = document.getElementById("bgMusic");
+
+    // Ensure autoplay works after user interaction
+    document.body.addEventListener('click', () => {
+        audio.play().catch(() => {});
+    });
+
+    function toggleAudio() {
+        if (audio.muted) {
+            audio.muted = false;
+        } else {
+            audio.muted = true;
+        }
+    }
+
+    function generateWish() {
+        const name = document.getElementById("name").value.trim();
+        if (!name) {
+            alert("Please enter your name!");
+            return;
+        }
+
+        const message = `Eid Mubarak from ${name}! 🎉 Wishing you happiness and blessings!`;
+
+        document.getElementById("message").innerText = message;
+        document.getElementById("whatsappBtn").style.display = "block";
+    }
+
+    function shareWhatsApp() {
+        const message = document.getElementById("message").innerText;
+        const url = window.location.href;
+
+        const whatsappURL = `https://wa.me/?text=${encodeURIComponent(message + " " + url)}`;
+        window.open(whatsappURL, '_blank');
+    }
+</script>
+
+</body>
+</html>
+<script async="async" data-cfasync="false" src="https://pl28287609.profitablecpmratenetwork.com/9f54faf22ae2f59d82cdc4cfb517ae52/invoke.js"></script>
+<div id="container-9f54faf22ae2f59d82cdc4cfb517ae52"></div>
